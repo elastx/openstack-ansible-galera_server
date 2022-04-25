@@ -33,6 +33,7 @@
     - { src: "systemd.slice.conf.j2", dest: "slice.conf" }
     - { src: "systemd.timeout.conf.j2", dest: "timeout.conf" }
     - { src: "systemd.without-privatedevices.conf.j2", dest: "without-privatedevices.conf" }
+    - { src: "systemd.tasks.conf.j2", dest: "tasks.conf" }
   notify:
     - Manage LB
     - Reload the systemd daemon
